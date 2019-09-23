@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-android-no-gestures" version="0.1.0">
+  <name>Cordova Android No Gestures Plugin</name>
+  <description>Cordova interface to disable the back gesture in Android 10+.</description>
+  <author>Mark Henle</author>
+  <keywords>cordova,android,no_gestures</keywords>
+  <license>MIT</license>
+
+  <js-module src="www/CordovaPluginAndroidNoGestures.js" name="CordovaPluginAndroidNoGestures">
+    <clobbers target="AndroidNoGestures" />
+  </js-module>
+
+  <platform name="android">
+
+    <source-file src="src/android/org.lichess.no_gestures/CordovaPluginAndroidNoGestures.java" target-dir="src/org/lichess/no_gestures" />
+    
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="CordovaPluginAndroidNoGestures">
+        <param name="android-package" value="org.lichess.no_gestures.CordovaPluginAndroidNoGestures" />
+      </feature>
+    </config-file>
+  </platform>
+</plugin>

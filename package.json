@@ -1,0 +1,32 @@
+{
+  "name": "cordova-plugin-android-no-gestures",
+  "version": "1.8.0",
+  "description": "Cordova interface to disable the back gesture in Android 10+.",
+  "cordova": {
+    "id": "cordova-plugin-android-no-gestures",
+    "platforms": [
+      "android"
+    ]
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "1.7.0": { "cordova-android": ">=7.0.0" }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freefal/cordova-plugin-android-no-gestures.git"
+  },
+  "keywords": [
+    "cordova",
+    "android",
+    "no-gestures",
+    "disable android gestures"
+  ],
+  "author": "Mark Henle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freefal/cordova-plugin-android-no-gestures/issues"
+  },
+  "homepage": "https://github.com/freefal/cordova-plugin-android-no-gestures#readme"
+}
